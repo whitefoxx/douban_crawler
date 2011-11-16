@@ -1,0 +1,9 @@
+create table if not exists group_user (\
+	db_group text, user_name text, user_page text)
+
+create table if not exists user_movie (\
+	user text, subject integer, rating integer, date text,\
+   	tags text, comment text)
+
+create table if not exists user (\
+	user text, user_page text, movie_crawled boolean)
